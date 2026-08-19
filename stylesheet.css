@@ -1,0 +1,61 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100dvh;
+    background-color: #e2ccda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 60%;
+    height: auto;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.34));
+    animation: glitchy .2s infinite;
+}
+
+@keyframes glitchy {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-13px, 31px);
+    }
+
+    40% {
+        transform: translate(32px, -13px);
+    }
+
+    60% {
+        transform: translate(-22px, -21px);
+    }
+
+    80% {
+        transform: translate(122px, 21px);
+    }
+
+    100% {
+        transform: translate(22px);
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    img {
+        width: 90%;
+    }
+}
+
+
